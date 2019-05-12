@@ -15,7 +15,7 @@ export default class HomePage extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>HomePage</Text>
+        <Text style={styles.welcome}>HomePage1</Text>
       </View>
     );
   }
