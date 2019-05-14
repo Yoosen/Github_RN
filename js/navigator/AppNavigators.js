@@ -23,7 +23,7 @@ const MainNavigator = createStackNavigator({
     DetailPage:{
         screen: DetailPage,
         navigationOptions:{
-            header: null, //将header设置为null，禁用createStackNavigator的Navigation Bar，全                    屏显示
+            // header: null, //将header设置为null，禁用createStackNavigator的Navigation Bar，全                    屏显示
         }
     }
 });

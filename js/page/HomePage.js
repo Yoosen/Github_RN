@@ -8,16 +8,23 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import {createBottomTabNavigator, createAppContainer} from "react-navigation";
+import PopularPage from './PopularPage';
+import TrendingPage from './TrendingPage';
+import FavoritePage from './FavoritePage';
+import MyPage from './MyPage';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import NavigationUtil from '../navigator/NavigationUtil';
+import DynamicTabNavigator from '../navigator/DynamicTabNavigator';
 
 
 type Props = {};
 export default class HomePage extends Component<Props> {
+  
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>HomePage</Text>
-      </View>
-    );
+    NavigationUtil.navigation = this.props.navigation;
+    return <DynamicTabNavigator/>
   }
 }
 
